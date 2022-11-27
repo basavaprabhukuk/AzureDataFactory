@@ -1,0 +1,9 @@
+{
+	"name": "prabhuadfproject1",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3626664d-b8fd-46c9-94b2-88d1dd43ada4",
+		"tenantId": "1906f83c-2b4c-4410-be39-fef9f30b9e10"
+	}
+}

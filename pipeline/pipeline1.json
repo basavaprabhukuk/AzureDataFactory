@@ -1,0 +1,71 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "JsonSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"wildcardFileName": "*.json",
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "JsonReadSettings"
+						}
+					},
+					"sink": {
+						"type": "JsonSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "JsonWriteSettings"
+						}
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "Source",
+						"type": "DatasetReference",
+						"parameters": {
+							"source": {
+								"value": "@concat( formatDateTime(utcNow(),'yyyy'),'/', formatDateTime(utcNow(),'dd'),'/')",
+								"type": "Expression"
+							}
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "input",
+						"type": "DatasetReference",
+						"parameters": {
+							"input": {
+								"value": "@concat('landing/',formatDateTime(utcNow(),'yyyy'),'/', formatDateTime(utcNow(),'dd'),'/')\n\n",
+								"type": "Expression"
+							}
+						}
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2022-11-27T21:39:51Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
