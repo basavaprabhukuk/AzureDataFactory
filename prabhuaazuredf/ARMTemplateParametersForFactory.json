@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "prabhuaazuredf"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase_LinledService_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://azureproject115.dfs.core.windows.net/"
+		},
+		"BlobStorageTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/9fc83866-954e-4942-80ae-ab03487103a6/resourceGroups/prabhuazurerg/providers/Microsoft.Storage/storageAccounts/azureproject115"
+		}
+	}
+}
