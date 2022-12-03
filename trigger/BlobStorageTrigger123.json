@@ -2,7 +2,7 @@
 	"name": "BlobStorageTrigger123",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [
 			{
 				"pipelineReference": {
@@ -14,7 +14,6 @@
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
 			"blobPathBeginsWith": "/input/blobs/staging/",
-			"blobPathEndsWith": "Customer_Valid.json",
 			"ignoreEmptyBlobs": true,
 			"scope": "/subscriptions/9fc83866-954e-4942-80ae-ab03487103a6/resourceGroups/prabhuazurerg/providers/Microsoft.Storage/storageAccounts/azureproject115",
 			"events": [
