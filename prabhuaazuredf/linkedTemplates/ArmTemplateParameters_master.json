@@ -14,7 +14,7 @@
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://azureproject115.dfs.core.windows.net/"
 		},
-		"BlobStorageTrigger_properties_typeProperties_scope": {
+		"BlobStorageTrigger123_properties_typeProperties_scope": {
 			"value": "/subscriptions/9fc83866-954e-4942-80ae-ab03487103a6/resourceGroups/prabhuazurerg/providers/Microsoft.Storage/storageAccounts/azureproject115"
 		},
 		"containerUri": {

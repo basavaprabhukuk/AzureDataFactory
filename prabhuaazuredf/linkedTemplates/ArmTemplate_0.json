@@ -19,7 +19,7 @@
 			"type": "string",
 			"defaultValue": "https://azureproject115.dfs.core.windows.net/"
 		},
-		"BlobStorageTrigger_properties_typeProperties_scope": {
+		"BlobStorageTrigger123_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/9fc83866-954e-4942-80ae-ab03487103a6/resourceGroups/prabhuazurerg/providers/Microsoft.Storage/storageAccounts/azureproject115"
 		}
@@ -366,7 +366,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/BlobStorageTrigger')]",
+			"name": "[concat(parameters('factoryName'), '/BlobStorageTrigger123')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -386,7 +386,7 @@
 					"blobPathBeginsWith": "/input/blobs/staging/",
 					"blobPathEndsWith": "Customer_Valid.json",
 					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('BlobStorageTrigger_properties_typeProperties_scope')]",
+					"scope": "[parameters('BlobStorageTrigger123_properties_typeProperties_scope')]",
 					"events": [
 						"Microsoft.Storage.BlobCreated"
 					]
