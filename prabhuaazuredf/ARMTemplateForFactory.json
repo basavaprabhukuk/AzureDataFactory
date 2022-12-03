@@ -384,6 +384,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/input/blobs/staging/",
+					"blobPathEndsWith": "Customer_Valid.json",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('BlobStorageTrigger_properties_typeProperties_scope')]",
 					"events": [
