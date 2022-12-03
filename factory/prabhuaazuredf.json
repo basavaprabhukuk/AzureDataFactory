@@ -1,0 +1,9 @@
+{
+	"name": "prabhuaazuredf",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0907ae7e-2800-4337-bbf4-73ad18d71b22",
+		"tenantId": "1906f83c-2b4c-4410-be39-fef9f30b9e10"
+	}
+}
